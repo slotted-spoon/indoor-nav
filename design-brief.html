@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Slotted Spoon - Design Brief</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">UXD - Slotted Spoon</a></h1>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li>
+										<a href="#">Introduction</a>
+										<ul>
+											<li><a href="consent-narrative.html">Consent narrative</a></li>
+											<li><a href="project-brief.html">Project brief</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Needs Analysis</a>
+										<ul>
+											<li><a href="inspirational-designs.html">Inspirational Designs</a></li>
+											<li><a href="design-brief.html">Design brief</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Design Development</a>
+										<ul>
+											<li><a href="#">Something</a></li>
+											<li><a href="#">Something else</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Design Refinement</a>
+										<ul>
+											<li><a href="#">Something</a></li>
+											<li><a href="#">Something else</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Final Refinement</a>
+										<ul>
+											<li><a href="#">Something</a></li>
+											<li><a href="#">Something else</a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+							<article class="box post">
+								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<header>
+									<h2>Design Brief</h2>
+									<p>A more detailed look at users, opportunity, and chances</p>
+								</header>
+								<p>
+									Attempting to find your way in an unfamiliar place is a frustrating endeavor, particularly when there is not someone nearby who can provide immediate help (such as a librarian or curator). Thus, by addressing the issue of small-scale wayfinding, we will help reduce the stress of going into strange areas, help people who are in a hurry find what they need quickly, and enhance the experience of physical signage. Finally, our project will provide a wayfinding method that is less intrusive into both the lives of the user and those around them who may have otherwise been called upon to give directions, distracting them from other tasks or conversations.
+								</p>
+								<p>
+									Our product will focus on users who need to find their way through dense or complicated “indoor” environments with a specific goal in mind. For example, a library patron searching for a specific book, a visitor to a hospital searching for a specific room, a tourist navigating a new mass transit system, or a student looking for their professor’s office or classroom. We considered the properties that many of these navigation experiences/spaces share, and captured our thoughts with this set of axes:
+								</p>
+								<a href="#"><img src="images/axes_mapping.jpg" alt="A series of 7 vertical axes with 7 different public spaces mapped onto each. From left to right: private, signage, stressful, simple, small, fluid, and frequency of visiting. The locations are libraries, schools, hospitals, grocery stores, transit, airports, and conventions." width="90%"/></a>
+								<p>We concluded that, in general, users tend to be unfamiliar with the spaces they are navigating, and the spaces themselves are often (but not always) somewhat fluid — books can be moved as sections shift around, or grocery store aisles can be reconfigured as new products are featured. The spaces themselves also tend to have a fair amount of physical signage, due in part to the spaces themselves being difficult to navigate, but this signage is often difficult to understand.</p>
+								<p>Based on our own experiences and two interviews, we mapped the way these processes tend to progress (and be interrupted) in a workflow diagram:
+								<a href="#"><img src="images/flow_diagram.jpg" alt="A set of post-it notes that trace a workflow of entering the library, using software to locate a book, navigating to it, and succeeding. Other post-it notes describe things that could go wrong in the process." width="90%"/></a></p>
+								<p>Users enter with a goal in mind, rely on an external source of information to discover where to head, rely on external signage or software guidance to get to the right place, then manually search to find their final destination. There are many junctions where this process can be interrupted, many of which hinge on the available information being incorrect or misleading. If this process is interrupted in this fashion, it often results in the entire process starting over, and a great deal of frustration for the user.</p>
+								<section>
+									<header>
+										<h3>Requirements</h3>
+									</header>
+									<p>From here, we brainstormed a collection of more specific problems related to our project, clustered them, brainstormed possible solutions, clustered them as well, then labeled the major clusters that emerged. This process is captured with this artifact:
+										<a href="#"><img src="images/clusters.jpg" alt="A set of post-it notes with problems in yellow, solutions in blue, and orange categories. These categories are accessibility, streamline existing interfaces, nonverbal/nonvisual navigational cues, broad categories, specific object, and interface with existing solutions." width="90%"/></a></p>
+									<p>
+										After this discussion, we concluded that our project should not replace physical signage, but augment it where such signage already exists. It also must be intuitive to use (both for entering one’s goal and navigating to it) and easy to update if any changes in the path arise. It must not exclude user groups or common use cases by the way it passes along information (e.g. it should not be solely visual or solely auditory, as this limits who can use the software in what situations). It also must work in situations where GPS currently is not sufficient, while still providing some sort of feedback as the user navigates towards their goal.
+									</p>
+								</section>
+								<section>
+									<header>
+										<h3>Naive design ideas</h3>
+									</header>
+									<p>
+										We have several naive design ideas that we believe could be useful. To solve the problem of inadequate or misleading signage, we could create a system of kiosks and screens. The user could enter their destination in the kiosk and then the screens could use facial recognition software to determine who is looking at them, what they said they were looking for, and which direction they should go to reach their destination. As people pass the signs, they update. This would enable people to only focus on the needed directions so they are not confused or slowed down by inapplicable signs. Another idea is small drone leaders. The user would use an interface to determine what they are looking for then a small drone arrives and leads them to the general area where that could be found. The drone could also scan the area locating various objects updating its system. This could solve the problem of fluid space navigation because the feedback from the drone would feed back into the navigation system helping it provide more accurate locations.  We also are considering creating a heated or haptic feedback object that would change its behavior as the user approaches the general area being sought. This is useful for people with visual or auditory impairments and is perfect for noisy or quiet spaces. It also allows for navigation that does not distract the user from conversations or sight-seeing.
+									</p>
+								</section>
+								<section>
+									<header>
+										<h3>Impact</h3>
+									</header>
+									<p>
+										The impact of our solution can be fairly substantial. Many people often lose their way in indoor spaces. Consumer-available GPS navigation systems are often only accurate to 30 feet, and this accuracy worsens near and inside buildings. This means GPS is insufficient for navigating users to specific shelves or places in a building, or to a different floor. There are many current places with inadequate navigation assistance. For example, many hospital floor maps, room numbers and wing designations are hard to comprehend or misleading. There can be so many points of interest crammed into a single building that many physical signage systems are almost as confusing as no signage. Many of these buildings, such as hospitals, are often high stress environments that make it more difficult to process directions. Our project could simplify and ease the experience of users in many indoor spaces, from grocery stores to hospitals, by enhancing understanding and discoverability of spaces and layout, particularly the specific place the user is seeking.
+									</p>
+								</section>
+								<section>
+									<header>
+										<h3>Limitations</h3>
+									</header>
+									<p>
+										Due in part to our team’s rough start, we have limited evidence. While we are confident, from our personal experiences and word of mouth, that there exist users who would find this project compelling and impactful, we were able to arrange only two interviews, and those were with librarians, not the type of library user we would be designing for. Additionally, our interviews were specific to libraries as spaces, but we have not defined our users as specifically library patrons. Finally, we are working in a space — wayfinding — that is relatively well defined for non-software approaches, and we have not done significant research in this area.
+									</p>
+								</section>
+								<section>
+									<header>
+										<h3>Effort Distribution</h3>
+									</header>
+									<p>
+										We feel our efforts are fairly well distributed and match our expectations given commitment levels to the course. Kaitlyn wasn’t part of our team for the project brief and initial consent narrative. Louise and Kaitlyn took on website production and Coleman and MJ were responsible for larger sections of the design brief to balance that.
+									</p>
+								</section>
+							</article>
+
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							<!-- <div class="col-8 col-12-medium">
+								<section>
+									<header>
+										<h2>Blandit nisl adipiscing</h2>
+									</header>
+									<ul class="dates">
+										<li>
+											<span class="date">Jan <strong>27</strong></span>
+											<h3><a href="#">Lorem dolor sit amet veroeros</a></h3>
+											<p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.</p>
+										</li>
+										<li>
+											<span class="date">Jan <strong>23</strong></span>
+											<h3><a href="#">Ipsum sed blandit nisl consequat</a></h3>
+											<p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.</p>
+										</li>
+										<li>
+											<span class="date">Jan <strong>15</strong></span>
+											<h3><a href="#">Magna tempus lorem feugiat</a></h3>
+											<p>Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit consequat.</p>
+										</li>
+										<li>
+											<span class="date">Jan <strong>12</strong></span>
+											<h3><a href="#">Dolore tempus ipsum feugiat nulla</a></h3>
+											<p>Feugiat lorem dolor sed nullam tempus lorem ipsum dolor sit amet nullam consequat.</p>
+										</li>
+										<li>
+											<span class="date">Jan <strong>10</strong></span>
+											<h3><a href="#">Blandit tempus aliquam?</a></h3>
+											<p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
+										</li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section>
+									<header>
+										<h2>What's this all about?</h2>
+									</header>
+									<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
+									<p>
+										This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
+										<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
+										the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!
+									</p>
+									<footer>
+										<ul class="actions">
+											<li><a href="#" class="button">Find out more</a></li>
+										</ul>
+									</footer>
+								</section>
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+								<section>
+									<header>
+										<h2>Tempus consequat</h2>
+									</header>
+									<ul class="divided">
+										<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
+										<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
+										<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
+										<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
+										<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
+										<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+								<section>
+									<header>
+										<h2>Ipsum et phasellus</h2>
+									</header>
+									<ul class="divided">
+										<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
+										<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
+										<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
+										<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
+										<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
+										<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section>
+									<header>
+										<h2>Vitae tempor lorem</h2>
+									</header>
+									<ul class="social">
+										<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
+										<li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+										<li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+										<li><a class="icon fa-tumblr" href="#"><span class="label">Tumblr</span></a></li>
+										<li><a class="icon fa-linkedin" href="#"><span class="label">LinkedIn</span></a></li>
+									</ul>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<p>
+												Untitled Incorporated<br />
+												1234 Somewhere Road Suite<br />
+												Nashville, TN 00000-0000
+											</p>
+										</li>
+										<li>
+											<h3>Mail</h3>
+											<p><a href="#">someone@untitled.tld</a></p>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<p>(800) 000-0000</p>
+										</li>
+									</ul>
+								</section>
+							</div> -->
+							<div class="col-12">
+
+								<!-- Copyright -->
+									<div id="copyright">
+										<ul class="links">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
