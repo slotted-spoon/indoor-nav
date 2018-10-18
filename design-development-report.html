@@ -70,52 +70,65 @@
 						<!-- Content -->
 							<article class="box post">
 								<header>
-									<h2>Design Brief</h2>
-									<p>A more detailed look at users, opportunity, and chances</p>
+									<h2>Design Development Phase Report</h2>
 								</header>
 								<p>
-									Attempting to find your way in an unfamiliar place is a frustrating endeavor, particularly when there is not someone nearby who can provide immediate help (such as a librarian or curator). Thus, by addressing the issue of small-scale wayfinding, we will help reduce the stress of going into strange areas, help people who are in a hurry find what they need quickly, and enhance the experience of physical signage. Finally, our project will provide a wayfinding method that is less intrusive into both the lives of the user and those around them who may have otherwise been called upon to give directions, distracting them from other tasks or conversations.
+									Our design is a picture based indoor navigation app that combines haptic feedback with visual instructions. The design provides a steady haptic heartbeat to reinforce instructions on a screen. This design allows users to find their way indoors using a variety of signals. Its combination of visual and haptic feedback allows the phone to provide the needed level of instruction.
 								</p>
 								<p>
-									Our product will focus on users who need to find their way through dense or complicated “indoor” environments with a specific goal in mind. For example, a library patron searching for a specific book, a visitor to a hospital searching for a specific room, a tourist navigating a new mass transit system, or a student looking for their professor’s office or classroom. We considered the properties that many of these navigation experiences/spaces share, and captured our thoughts with this set of axes:
+									Users navigating through new and complex spaces can intently watch the phone screen for precise instructions. People navigating through a simple or somewhat familiar space can slip the phone into their pocket and use the haptic feedback to reinforce their own intuition. This is a flexible system that allows the app to provide as much or as little help as needed.
 								</p>
-								<a href="#"><img src="images/axes_mapping.jpg" alt="A series of 7 vertical axes with 7 different public spaces mapped onto each. From left to right: private, signage, stressful, simple, small, fluid, and frequency of visiting. The locations are libraries, schools, hospitals, grocery stores, transit, airports, and conventions." width="90%"/></a>
-								<p>We concluded that, in general, users tend to be unfamiliar with the spaces they are navigating, and the spaces themselves are often (but not always) somewhat fluid — books can be moved as sections shift around, or grocery store aisles can be reconfigured as new products are featured. The spaces themselves also tend to have a fair amount of physical signage, due in part to the spaces themselves being difficult to navigate, but this signage is often difficult to understand.</p>
-								<p>Based on our own experiences and two interviews, we mapped the way these processes tend to progress (and be interrupted) in a workflow diagram:
-								<a href="#"><img src="images/flow_diagram.jpg" alt="A set of post-it notes that trace a workflow of entering the library, using software to locate a book, navigating to it, and succeeding. Other post-it notes describe things that could go wrong in the process." width="90%"/></a></p>
-								<p>Users enter with a goal in mind, rely on an external source of information to discover where to head, rely on external signage or software guidance to get to the right place, then manually search to find their final destination. There are many junctions where this process can be interrupted, many of which hinge on the available information being incorrect or misleading. If this process is interrupted in this fashion, it often results in the entire process starting over, and a great deal of frustration for the user.</p>
+								<img src="images/PrototypeScreens.png" alt="A series of 4 images of phone screens, each with a text instruction at the top, an image, and a red arrow describing where to go." width="90%"/>
+								<p>
+									Creating a system that provides both visual and haptic cues allows the app to sink into the background of the user’s journey. Once the destination is chosen, the user can hold the phone to their side and navigate based on the heartbeats. If the user gets lost or misinterprets the buzzes, the text and  visual instructions can be quickly glanced at allowing the user to easily navigate back to the right track. While using the app, people can look up from their phones and absorb the area around them while still maintaining a correct path.
+								</p>
+								<p>
+									The user first sets their indoor destination using an initial input screen on a smartphone. The phone then calculates the best route and begins to pulse. The user can then slip their phone into their pocket or hold it at their side while it buzzes slightly. As they walk to their destination, the pulsing alerts them to new instructions. The user then looks down at the phone and views an arrow imposed overtop of the hallway space. They follow that arrow and the phone pulses pleasantly. If the user takes a wrong turn and walks down the wrong hallway, the buzzing pattern will change and grow louder as the distance to the correct route increases. This will alert the user to their incorrect course suggesting they should check the phone to reorient themselves.
+								</p>
 								<section>
 									<header>
-										<h3>Requirements</h3>
+										<h3>Addressing User Needs</h3>
 									</header>
-									<p>From here, we brainstormed a collection of more specific problems related to our project, clustered them, brainstormed possible solutions, clustered them as well, then labeled the major clusters that emerged. This process is captured with this artifact:
-										<a href="#"><img src="images/clusters.jpg" alt="A set of post-it notes with problems in yellow, solutions in blue, and orange categories. These categories are accessibility, streamline existing interfaces, nonverbal/nonvisual navigational cues, broad categories, specific object, and interface with existing solutions." width="90%"/></a></p>
 									<p>
-										After this discussion, we concluded that our project should not replace physical signage, but augment it where such signage already exists. It also must be intuitive to use (both for entering one’s goal and navigating to it) and easy to update if any changes in the path arise. It must not exclude user groups or common use cases by the way it passes along information (e.g. it should not be solely visual or solely auditory, as this limits who can use the software in what situations). It also must work in situations where GPS currently is not sufficient, while still providing some sort of feedback as the user navigates towards their goal.
+										All the tested users managed to find their way to the specified location through a combination of using the images as displayed on the ‘screen’ and the buzzing, or haptic feedback. This demonstrated at least a basic ability to guide the user around an indoor space. One of our users also favored the haptic feedback and appreciated that they could use the navigation without having to hold onto their phone and keep it in front of them. They felt that this aligned well with a desire to navigate independently and not appear lost.
+									</p>
+									<p>
+										However, there are still some issues in discoverability and accessibility. For the first, even when specifically asked how they would interact with the screen, our users did not find the pull-down menu. This may have been an issue with the iconography, or it may have been an issue with the paper prototype itself; we haven’t conducted testing specifically on this aspect yet, which is a next step. The vibration for haptic feedback was another issue of signification, which may be resolved by an on-device prototype with actual vibration. For at least one user, we had to verbally explain that the ‘heartbeat’ pulse was a desirable state, and that the harsher buzz was a notification. Ideally, this could be taken care of by an onboarding process or by the visuals of the screen. If by visuals, we will have to also take into account users with low vision, and ensure that they also know the difference between the ‘on-track’ and ‘wrong way’ vibrations.
+									</p>
+									<p>
+										We have not yet tested a landing page or destination input screen, instead jumping right to navigation. While this is a significant area for designing the user experience, the process of getting to this point will also be key to the final form. This leads us to some of the accessibility issues: if we had an input screen, we might have remembered to include an option for wheelchair accessibility or other considerations. Because we did not, we are currently catering for people with full mobility. This greatly limits our potential user group.
+									</p>
+									<p>
+										We have not yet addressed re-routing if the user gets particularly far off-route, or explored other options for feedback (verbal directions, for example). These things will hopefully appear in later drafts to test.
+									</p>
+									<p>
+										Overall, while we meet the basic user needs for a certain user group, we also found a lot of areas that could use significant improvement to better fit user needs.
 									</p>
 								</section>
 								<section>
 									<header>
-										<h3>Naive design ideas</h3>
+										<h3>Design Decisions</h3>
 									</header>
 									<p>
-										We have several naive design ideas that we believe could be useful. To solve the problem of inadequate or misleading signage, we could create a system of kiosks and screens. The user could enter their destination in the kiosk and then the screens could use facial recognition software to determine who is looking at them, what they said they were looking for, and which direction they should go to reach their destination. As people pass the signs, they update. This would enable people to only focus on the needed directions so they are not confused or slowed down by inapplicable signs. Another idea is small drone leaders. The user would use an interface to determine what they are looking for then a small drone arrives and leads them to the general area where that could be found. The drone could also scan the area locating various objects updating its system. This could solve the problem of fluid space navigation because the feedback from the drone would feed back into the navigation system helping it provide more accurate locations.  We also are considering creating a heated or haptic feedback object that would change its behavior as the user approaches the general area being sought. This is useful for people with visual or auditory impairments and is perfect for noisy or quiet spaces. It also allows for navigation that does not distract the user from conversations or sight-seeing.
+										One of the first decisions we made this phase was between visitor- and provider-centered indoor navigation projects. A provider-centered project would require a more complex solution and has an interesting twist on the approach - we don’t usually think of designing for providers. A visitor-centered project would focus more on the communication and navigation aspects we were interested in and may have easier-to-access users. In the end, we had four or fives ideas that fell into these two categories, and we used excellence voting to choose based on our individual priorities.
 									</p>
+									<p>
+										We narrowed which kinds of visuals were more valuable during user testing. Our paper prototype had three modes: it could navigate the test user through the same path using images, diagrams, or floor plans. We learned from our testing that the top-down floor plans (similar to Google Maps navigation) were not useful indoors. The images and diagrams were both more valuable to our users and we may include them both in our prototype.
+									</p>
+									<img src="images/Prototypes.jpg" alt="A series of 4 images of phone screens, each with a text instruction at the top, an image, and a red arrow describing where to go." width="90%"/>
 								</section>
 								<section>
 									<header>
-										<h3>Impact</h3>
+										<h3>Key Insights</h3>
 									</header>
 									<p>
-										The impact of our solution can be fairly substantial. Many people often lose their way in indoor spaces. Consumer-available GPS navigation systems are often only accurate to 30 feet, and this accuracy worsens near and inside buildings. This means GPS is insufficient for navigating users to specific shelves or places in a building, or to a different floor. There are many current places with inadequate navigation assistance. For example, many hospital floor maps, room numbers and wing designations are hard to comprehend or misleading. There can be so many points of interest crammed into a single building that many physical signage systems are almost as confusing as no signage. Many of these buildings, such as hospitals, are often high stress environments that make it more difficult to process directions. Our project could simplify and ease the experience of users in many indoor spaces, from grocery stores to hospitals, by enhancing understanding and discoverability of spaces and layout, particularly the specific place the user is seeking.
+										Users will naturally want to interact with our navigation cues in different ways-- some will constantly look at the screen, while others will want to put it in their pocket and use the haptic feedback as cues to look for new directions. Our project needs to be able to adapt to all of these methods of interaction, regardless of the capabilities of the users.
 									</p>
-								</section>
-								<section>
-									<header>
-										<h3>Limitations</h3>
-									</header>
 									<p>
-										Due in part to our team’s rough start, we have limited evidence. While we are confident, from our personal experiences and word of mouth, that there exist users who would find this project compelling and impactful, we were able to arrange only two interviews, and those were with librarians, not the type of library user we would be designing for. Additionally, our interviews were specific to libraries as spaces, but we have not defined our users as specifically library patrons. Finally, we are working in a space — wayfinding — that is relatively well defined for non-software approaches, and we have not done significant research in this area.
+										Suspension of disbelief in paper prototype testing is important, but hard to maintain. There were several aspects of our prototype (the lack of actual haptic feedback, the lack of redirection, and the lack of a landing page/destination input) that brought our testers out of interactions with our prototype. From here on, if we do more testing, we’ll need to make sure to be able to model a more complete interaction, or spend more time making sure our testers understand the limits of our prototype beforehand.
+									</p>
+									<p>
+										The top-down blueprint-based view just doesn’t work as well for navigating indoor spaces as a pedestrian as well as first person views. You move on predetermined paths less often, and hallways don’t have names like streets do. It’s also much easier to leverage existing signage/landmarks with first person view photographs/diagrams.
 									</p>
 								</section>
 								<section>
@@ -123,7 +136,7 @@
 										<h3>Effort Distribution</h3>
 									</header>
 									<p>
-										We feel our efforts are fairly well distributed and match our expectations given commitment levels to the course. Kaitlyn wasn’t part of our team for the project brief and initial consent narrative. Louise and Kaitlyn took on website production and Coleman and MJ were responsible for larger sections of the design brief to balance that.
+										!!!!!!!!!!!!!!!!!!
 									</p>
 								</section>
 							</article>
