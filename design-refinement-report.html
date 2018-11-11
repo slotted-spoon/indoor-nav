@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Slotted Spoon - Design Development</title>
+		<title>Slotted Spoon - Design Refinement</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -70,7 +70,7 @@
 						<!-- Content -->
 							<article class="box post">
 								<header>
-									<h2>Design Development Phase Report</h2>
+									<h2>Design Refinement Phase Report</h2>
 								</header>
 								<p>
 									Our design is a picture based indoor navigation app that combines haptic feedback with visual instructions. The design provides a steady haptic heartbeat to reinforce instructions on a screen. This design allows users to find their way indoors using a variety of signals. Its combination of visual and haptic feedback allows the phone to provide the needed level of instruction.
@@ -78,57 +78,55 @@
 								<p>
 									Users navigating through new and complex spaces can intently watch the phone screen for precise instructions. People navigating through a simple or somewhat familiar space can slip the phone into their pocket and use the haptic feedback to reinforce their own intuition. This is a flexible system that allows the app to provide as much or as little help as needed.
 								</p>
-								<img src="images/PrototypeScreens.png" alt="A series of 4 images of phone screens, each with a text instruction at the top, an image, and a red arrow describing where to go." width="90%"/>
+								<img src="images/routeOptionsElevator.jpg" alt="A series of 4 images of phone screens, each with a text instruction at the top, an image, and a red arrow describing where to go." width="33%"/>
+								<img src="images/landingScreenChoices.jpg" alt="A series of 4 images of phone screens, each with a text instruction at the top, an image, and a red arrow describing where to go." width="33%"/>
+								<img src="images/step3a.jpg" alt="A series of 4 images of phone screens, each with a text instruction at the top, an image, and a red arrow describing where to go." width="33%"/>
 								<p>
-									Creating a system that provides both visual and haptic cues allows the app to sink into the background of the user’s journey. Once the destination is chosen, the user can hold the phone to their side and navigate based on the heartbeats. If the user gets lost or misinterprets the buzzes, the text and  visual instructions can be quickly glanced at allowing the user to easily navigate back to the right track. While using the app, people can look up from their phones and absorb the area around them while still maintaining a correct path.
-								</p>
-								<p>
-									The user first sets their indoor destination using an initial input screen on a smartphone. The phone then calculates the best route and begins to pulse. The user can then slip their phone into their pocket or hold it at their side while it buzzes slightly. As they walk to their destination, the pulsing alerts them to new instructions. The user then looks down at the phone and views an arrow imposed overtop of the hallway space. They follow that arrow and the phone pulses pleasantly. If the user takes a wrong turn and walks down the wrong hallway, the buzzing pattern will change and grow louder as the distance to the correct route increases. This will alert the user to their incorrect course suggesting they should check the phone to reorient themselves.
+									Users interact with our app by first inputting a desired destination, where they can choose from popular or recently visited locations or enter their own destination. They’re then taken to a route overview screen where their current location and final destination are pictured, along with whether stairs or elevators will be used in reaching their destination; on this screen, users can choose whether to use elevators or stairs, and can also toggle the navigation’s haptic feedback on and off. Once they hit go, users are then shown a series of images superimposed with arrows showing how to proceed through the pictured spaces. During navigation, the user’s phone vibrates softly in a heartbeat pattern when users are on the right track, and more harshly when they’ve taken a wrong turn, which can aid in navigation when users aren’t actively watching their screen.
 								</p>
 								<section>
 									<header>
-										<h3>Addressing User Needs</h3>
+										<h3>What changed?</h3>
 									</header>
 									<p>
-										All the tested users managed to find their way to the specified location through a combination of using the images as displayed on the ‘screen’ and the buzzing, or haptic feedback. This demonstrated at least a basic ability to guide the user around an indoor space. One of our users also favored the haptic feedback and appreciated that they could use the navigation without having to hold onto their phone and keep it in front of them. They felt that this aligned well with a desire to navigate independently and not appear lost.
+										A few things changed between this phase and the last one. The main improvement revolved around the display type. In the last phase, we tested several different types of ways to display the directions. These included an AR arrow overlay, a vectorized picture walkthrough and an actual picture walk-through. In the last phase, we found that both the AR arrow and vectorized picture were less useful than the picture. We kept this in mind when making design decisions throughout the phase.
 									</p>
 									<p>
-										However, there are still some issues in discoverability and accessibility. For the first, even when specifically asked how they would interact with the screen, our users did not find the pull-down menu. This may have been an issue with the iconography, or it may have been an issue with the paper prototype itself; we haven’t conducted testing specifically on this aspect yet, which is a next step. The vibration for haptic feedback was another issue of signification, which may be resolved by an on-device prototype with actual vibration. For at least one user, we had to verbally explain that the ‘heartbeat’ pulse was a desirable state, and that the harsher buzz was a notification. Ideally, this could be taken care of by an onboarding process or by the visuals of the screen. If by visuals, we will have to also take into account users with low vision, and ensure that they also know the difference between the ‘on-track’ and ‘wrong way’ vibrations.
+										We also changed some minor details after the cognitive walkthrough. During the walkthrough we realized we did not allow the users to scroll ahead in the instructions to preview their route. We also realized that we had to alter some of the picture layouts because we had a picture of the destination in a screen before the user input the destination. This screen was later changed to a view of the building the user is in. We also added a vibrate on vibrate off toggle after the cognitive walkthrough. We realized not all users will want their phone buzzing at them all the time so we gave them an option to turn it off.
 									</p>
 									<p>
-										We have not yet tested a landing page or destination input screen, instead jumping right to navigation. While this is a significant area for designing the user experience, the process of getting to this point will also be key to the final form. This leads us to some of the accessibility issues: if we had an input screen, we might have remembered to include an option for wheelchair accessibility or other considerations. Because we did not, we are currently catering for people with full mobility. This greatly limits our potential user group.
+										During the creation of the prototype, we decided that the AR view was a little excessive and didn’t add all that much functionality. Doing away with this also removed the semi-transparent overlay we had been discussing as an options screen, making the entire project a bit more minimalist and straightforward. Also, we ended up going with photos as the only option; this might still change in the future. It was during this phase also that we added an elevator route to specifically avoid stairs, which we had not previously had. We also didn’t get into route preview things due to the time constraints coming with learning Android Studio and making an app; this is something that was mentioned during feedback. Haptic feedback also became more thoroughly defined, though we may need to rethink this all around based on our heuristic evaluation feedback. We also did not put a significant amount of time into visual design, which we intend to improve going forward.
 									</p>
 									<p>
-										We have not yet addressed re-routing if the user gets particularly far off-route, or explored other options for feedback (verbal directions, for example). These things will hopefully appear in later drafts to test.
+										On the haptic feedback, we need to either present a compelling case to include the haptic feedback--such as specifically framing it as a pocket mode with a distinct on-boarding process to explain the use--or entirely remove it. The ‘heartbeat pulse’ we wanted was not conveyed as well as we hoped, which may have come out earlier with more interviews and discussions. However, there is still the chance for a ‘no look’ interface that is interesting, so we may leave it as something that can be disabled, but exists.
 									</p>
 									<p>
-										Overall, while we meet the basic user needs for a certain user group, we also found a lot of areas that could use significant improvement to better fit user needs.
+										There were also elements that were unclear to non-Android users, such as a lack of a back button. This was unavoidable in some ways; Android apps are specifically not supposed to have these, but would have been more clear if we had explained to iOS users. We also intend to include some common iconography going forward, such as an edit button on the destination or a change in the appearance if focused on to make it clear it can be changed.
+									</p>
+									<p>
+										It seems as though the route could use some work. This might be having a Google Maps-esque list view, a smaller picture of the next step, or being able to swipe through the route ahead of time. Also, the pictures might be better as vectorized images, with rerouting working. Finally, the text displayed in many areas--route overview and navigation in particular--needs work for readability.
 									</p>
 								</section>
 								<section>
 									<header>
-										<h3>Design Decisions</h3>
+										<h3>Key insights</h3>
 									</header>
 									<p>
-										One of the first decisions we made this phase was between visitor- and provider-centered indoor navigation projects. A provider-centered project would require a more complex solution and has an interesting twist on the approach - we don’t usually think of designing for providers. A visitor-centered project would focus more on the communication and navigation aspects we were interested in and may have easier-to-access users. In the end, we had four or fives ideas that fell into these two categories, and we used excellence voting to choose based on our individual priorities.
+										One of our largest takeaways from this phase was that prototyping effectively can be quite difficult, as there are always tradeoffs with each possible approach. We wanted to prototype our haptic feedback system, which we feel is central to our app’s unique identity, but we were unable to find a prototyping tool that had this functionality. We were thus faced with the difficult choice of either using a simpler prototyping tool and dropping the functionality, or writing our own app to have haptic feedback be possible. In the end, we settled on writing our own app, despite the increased workload (thanks Kaitlyn).
 									</p>
 									<p>
-										We narrowed which kinds of visuals were more valuable during user testing. Our paper prototype had three modes: it could navigate the test user through the same path using images, diagrams, or floor plans. We learned from our testing that the top-down floor plans (similar to Google Maps navigation) were not useful indoors. The images and diagrams were both more valuable to our users and we may include them both in our prototype.
+										Onboarding is important, especially when known feedback systems are used in novel ways. Users typically aren’t used to their phone buzzing at them during normal, correct operation, so the feedback our app gives tends to be confusing and disorienting if it hasn’t been explained.
 									</p>
-									<img src="images/Prototypes.jpg" alt="A series of 4 images of phone screens, each with a text instruction at the top, an image, and a red arrow describing where to go." width="90%"/>
 								</section>
 								<section>
 									<header>
-										<h3>Key Insights</h3>
+										<h3>Shortcomings</h3>
 									</header>
 									<p>
-										Users will naturally want to interact with our navigation cues in different ways-- some will constantly look at the screen, while others will want to put it in their pocket and use the haptic feedback as cues to look for new directions. Our project needs to be able to adapt to all of these methods of interaction, regardless of the capabilities of the users.
+										One of our bigger concerns is about the haptic feedback portion of our app. It feels really central to the app’s identity--possibly the biggest difference between us and many other navigation apps--but it is more disruptive than valuable to the majority of our testers. However, we must also balance that with the difficulty we’ve had testing our app. The haptic feedback was partly intended for people who are navigating spaces where they don’t want their phone out, or for people who are blind or visually impaired, and we haven’t been able to test either of those effectively. Additionally, we currently do not have a standalone way of introducing our users to the meaning of the haptic feedback in our app, and we aren’t sure if our team is prepared to make an effective onboarding process.
 									</p>
 									<p>
-										Suspension of disbelief in paper prototype testing is important, but hard to maintain. There were several aspects of our prototype (the lack of actual haptic feedback, the lack of redirection, and the lack of a landing page/destination input) that brought our testers out of interactions with our prototype. From here on, if we do more testing, we’ll need to make sure to be able to model a more complete interaction, or spend more time making sure our testers understand the limits of our prototype beforehand.
-									</p>
-									<p>
-										The top-down blueprint-based view just doesn’t work as well for navigating indoor spaces as a pedestrian as well as first person views. You move on predetermined paths less often, and hallways don’t have names like streets do. It’s also much easier to leverage existing signage/landmarks with first person view photographs/diagrams.
+										Additionally, we recognize the disadvantages that come with prototyping a full app on a short timescale. We are considering coupling our app with a more lightweight prototype (by using one of the available prototyping tools) to be able to better convey some of the aspects of our project that are very hard to implement.
 									</p>
 								</section>
 								<section>
@@ -136,7 +134,7 @@
 										<h3>Effort Distribution</h3>
 									</header>
 									<p>
-										We feel our efforts are fairly well distributed and match our expectations given commitment levels to the course. We all participated fairly equally in paper prototype creation and testing, including falling through on responsibilities with about equal frequency and importance. Louise took on migrating content to the website, and Coleman, MJ, and Kaitlyn were responsible for writing larger sections of the phase report to balance that.
+										Our efforts this phase were less equally distributed than they had been, partly because Kaitlyn wrote an entire mock-up app alone. Kaitlyn and MJ tested with other teams. Coleman and MJ worked on wireframes. Kaitlyn and Coleman synthesized heuristic evaluation feedback. Louise organized report-writing and migrated content to the website. Everyone came up with sketches of the screens (before the wireframes), participated in design decisions, and wrote parts of the report.
 									</p>
 								</section>
 							</article>
