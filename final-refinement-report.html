@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Slotted Spoon - Final Refinement</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">UXD - Slotted Spoon</a></h1>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li>
+										<a href="#">Introduction</a>
+										<ul>
+											<li><a href="consent-narrative.html">Consent Narrative</a></li>
+											<li><a href="project-brief.html">Project Brief</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Needs Analysis</a>
+										<ul>
+											<li><a href="inspirational-designs.html">Inspirational Designs</a></li>
+											<li><a href="design-brief.html">Design Brief</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Design Development</a>
+										<ul>
+											<li><a href="design-development-report.html">Report</a></li>
+											<li><a href="design-development-supplements.html">Supplemental Materials</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Design Refinement</a>
+										<ul>
+											<li><a href="design-refinement-report.html">Report</a></li>
+											<li><a href="heuristic-eval.pdf">Heuristic Evaluation</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Final Refinement</a>
+										<ul>
+											<li><a href="final-refinement-report.html">Report</a></li>
+											<li><a href="heuristic-eval-response.html">Heuristic Evaluation Response</a></li>
+											<li><a href="usability-study.html">Formal Usability Study</a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+							<article class="box post">
+								<header>
+									<h2>Final Refinement Phase Report</h2>
+								</header>
+								<p>
+									Our design is a picture based indoor navigation app that combines haptic feedback with visual instructions.
+								</p>
+								<p>
+									Attempting to find your way in an unfamiliar place is a frustrating endeavor, particularly when there is not someone nearby who can provide immediate help. Thus, by addressing the issue of small-scale wayfinding, we will help reduce the stress of going into strange areas, help people who are in a hurry find what they need quickly, and enhance the experience of physical signage. Finally, our project will provide a wayfinding method that is less intrusive into both the lives of the user and those around them who may have otherwise been called upon to give directions, distracting them from other tasks or conversations.
+								</p>
+								<p>
+									The space of indoor navigation has several well-established areas already, such as wayfinding and asking for directions. Some indoor spaces have specific strategies, like grocery stores with signs over the aisles or Target’s in-store navigation app. We have a more detailed survey of our project space in our <a href="inspirational-designs.html">inspirational designs document</a>.
+								</p>
+								<section>
+									<header>
+										<h3>User needs</h3>
+									</header>
+									<p>
+										On a basic level, our users need to navigate from one location to another smoothly and efficiently. Through research, interviews, and user testing, we discovered a deeper set of requirements for our app.
+									</p>
+									<ul>
+										<li>
+											<b>Successfully navigate from start location to destination:</b> Our users will use this app to receive directions. The must be able to enter a final destination then navigate from their starting position to the ending position. This is the basic functionality of the app. We identified this need early on. It serves as the project’s core.
+										</li>
+										<li>
+											<b>Accessible Routes:</b> Our users must be able to follow a handicapped accessible path. Our app should have an option that avoids stairs and uses the elevator. This path option is important to ensure our app is accessible to all and does not discriminate against users with mobility restrictions. This need was identified through external research about accessibility and wayfinding. Providing instructions that follow paths suited to an individual’s mobility capabilities is an important accessibility concern that is lacking in some current solutions like signage.
+										</li>
+										<li>
+											<b>Non-invasive instructions:</b> We want our users to be able to lower their phones and focus on the world around them. Our app should help encourage conversation and exploration while still providing enough instruction to reach the destination. Staring at a phone in a crowded space can be distracting and even hazardous. Users should be able to use non-visual cues to get around. We discovered this need through early interviews and research into wayfinding. The best navigation tools blend into the environment allowing users to intuitively find their way around.
+										</li>
+										<li>
+											<b>A sense of control:</b> Our app should let users feel like they know where they are going. The users should be able to preview their route and should be able to intuitively translate the on-screen instructions into real-world actions. We discovered this through user testing. Our initial prototype lacked several key features like route previewing. We did not think those features were extraordinarily critical but after testing with users we discovered that was not the case. Being able to control the route and have all knowledge up front puts users at ease.
+										</li>
+									</ul>
+								</section>
+								<section>
+									<header>
+										<h3>Our project</h3>
+									</header>
+									<p>
+										The final outcome, Dest, is an app that allows for navigation by images or vibration. After the user inputs their desired destination, they are provided a choice between using stairs or elevator (if it is a multi-floor trip) and can enable Pocket Mode. When Pocket Mode is enabled, the user is taken through a short onboarding that explains the vibrations they can expect to feel--a heartbeat pulse for while they are on track, a single longer vibration when the next step is ready, and angry buzzing when you get off track.
+									</p>
+									<p>
+										After this, the user sees images of the place they are supposed to go next, with red arrows indicating movement and red boxes highlighting significant signs or actions. These accompany the written steps. The steps advance automatically as the user proceeds along the route. However, there are also two options for the user to preview the next steps. By swiping in either direction, the user can preview the route pictures. By dragging the bottom menu up, they can see the list of steps. Pressing a step takes them to that image. If the user walks to the next area while doing this, the relevant image comes into focus again. At any point, they can also click ‘end’ to quit navigation.
+									</p>
+									<p>
+										The video below demonstrates these actions.
+									</p>
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/1-cj3A4nw0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<p>
+										As a note, this is all still a Wizard of Oz prototype. Only one route currently works, and the location-dependent actions happen based on the input of a connected PS4 controller. The source code can be found <a href="https://github.com/slotted-spoon/dest/tree/master/IndoorNav" alt="Source code on Github">here</a>.
+									</p>
+									<p>
+										This design addresses our previously identified key user needs in the following ways:
+									</p>
+									<ul>
+										<li>
+											<b>Successfully navigate from start location to destination:</b> Dest uses images taken from key navigation points overlaid with arrows and boxes that highlight the path users should take and important environmental markers (e.g. signs) that they can use to orient themselves. Dest also has brief but effective text instructions (e.g. “Turn left out of the hallway”), and an intuitive screen for inputting a desired destination. We strove for Dest’s interface to be familiar and accessible for users who have used standard navigation apps in the past (e.g. Google Maps), while also having features uniquely useful for indoor navigation (e.g. images overlaid with arrows instead of a top down map view).
+										</li>
+										<li>
+											<b>Accessible Routes:</b> Dest has an easily selectable option for stairs or elevators on the route selection screen. This was the only accessibility option we identified as necessary for the navigation from indoor spaces to other indoor spaces inside the Academic Center (the building we limited our prototype to).
+										</li>
+										<li>
+											<b>Non-invasive Instructions:</b> Dest has an optional pocket mode, that has the user’s phone vibrate to indicate instructions. It vibrates constantly and gently if the user is on track, vibrates as a notification that there are new instructions, and vibrates harshly if the user takes a wrong turn. This allows users that are familiar with the space they are navigating to ensure that they’re on the right track, allows users to interact with their companions while still being informed of the route, and can help users more casually explore a new space while still heading in generally the correct direction.
+										</li>
+										<li>
+											<b>A sense of control:</b> In response to user feedback via heuristic evaluations and usability studies, we added several route preview functionalities to Dest. After starting a route, users can scroll through preview images for next steps, to get an idea of where they are ultimately headed, as well as pull up a list of the text instructions they will receive along the entire route. Tapping a text instruction on the route will bring the user to that step’s photo instruction.
+										</li>
+									</ul>
+								</section>
+								<section>
+									<header>
+										<h3>Next steps</h3>
+									</header>
+									<p>
+										Significantly more graphic design would go into each screen. We also would include more of an introduction to the app, improve the onboarding seen in the video on the <a href="heuristic-eval-response.html">heuristic evaluation response</a>, and make sure it is designed for accessibility. There are a number of small details that would get cleaned up, given more time and a better understanding of Android Studio.
+									</p>
+								</section>
+								<section>
+									<header>
+										<h3>Effort Distribution</h3>
+									</header>
+									<p>
+										We felt our effort distribution was slightly more even than last phase. Louise, Kaitlyn, and Coleman did varying parts of developing, running, and synthesizing the Formal Usability Study. Louise wrote up the changes we made in response to the heuristic evaluation, and Kaitlyn implemented those changes in the prototype. MJ made and presented the lightning presentation (with feedback from the entire team). We split the writing of the report evenly. Louise moved everything onto the website.
+									</p>
+								</section>
+							</article>
+
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							<!-- <div class="col-8 col-12-medium">
+								<section>
+									<header>
+										<h2>Blandit nisl adipiscing</h2>
+									</header>
+									<ul class="dates">
+										<li>
+											<span class="date">Jan <strong>27</strong></span>
+											<h3><a href="#">Lorem dolor sit amet veroeros</a></h3>
+											<p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.</p>
+										</li>
+										<li>
+											<span class="date">Jan <strong>23</strong></span>
+											<h3><a href="#">Ipsum sed blandit nisl consequat</a></h3>
+											<p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.</p>
+										</li>
+										<li>
+											<span class="date">Jan <strong>15</strong></span>
+											<h3><a href="#">Magna tempus lorem feugiat</a></h3>
+											<p>Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit consequat.</p>
+										</li>
+										<li>
+											<span class="date">Jan <strong>12</strong></span>
+											<h3><a href="#">Dolore tempus ipsum feugiat nulla</a></h3>
+											<p>Feugiat lorem dolor sed nullam tempus lorem ipsum dolor sit amet nullam consequat.</p>
+										</li>
+										<li>
+											<span class="date">Jan <strong>10</strong></span>
+											<h3><a href="#">Blandit tempus aliquam?</a></h3>
+											<p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
+										</li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section>
+									<header>
+										<h2>What's this all about?</h2>
+									</header>
+									<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
+									<p>
+										This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
+										<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
+										the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!
+									</p>
+									<footer>
+										<ul class="actions">
+											<li><a href="#" class="button">Find out more</a></li>
+										</ul>
+									</footer>
+								</section>
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+								<section>
+									<header>
+										<h2>Tempus consequat</h2>
+									</header>
+									<ul class="divided">
+										<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
+										<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
+										<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
+										<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
+										<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
+										<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+								<section>
+									<header>
+										<h2>Ipsum et phasellus</h2>
+									</header>
+									<ul class="divided">
+										<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
+										<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
+										<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
+										<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
+										<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
+										<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section>
+									<header>
+										<h2>Vitae tempor lorem</h2>
+									</header>
+									<ul class="social">
+										<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
+										<li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+										<li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+										<li><a class="icon fa-tumblr" href="#"><span class="label">Tumblr</span></a></li>
+										<li><a class="icon fa-linkedin" href="#"><span class="label">LinkedIn</span></a></li>
+									</ul>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<p>
+												Untitled Incorporated<br />
+												1234 Somewhere Road Suite<br />
+												Nashville, TN 00000-0000
+											</p>
+										</li>
+										<li>
+											<h3>Mail</h3>
+											<p><a href="#">someone@untitled.tld</a></p>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<p>(800) 000-0000</p>
+										</li>
+									</ul>
+								</section>
+							</div> -->
+							<div class="col-12">
+
+								<!-- Copyright -->
+									<div id="copyright">
+										<ul class="links">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
